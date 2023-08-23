@@ -1,0 +1,78 @@
+<div class="container fila ">
+    <div class="row ">
+      <div class="col-lg-12">
+        <div>
+          <h3 class="text-center mb-4">Fill out the form</h3>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-danger text-center" *ngIf="alert === true " role="alert">
+        the form is wrong
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="form-floating">
+          <input
+            class="form-control"
+            type="text"
+            [(ngModel)]="name"
+            id="name"
+            placeholder="Write the name"
+          />
+          <label for="name">Write the name</label>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="form-floating">
+          <input
+            class="form-control"
+            type="text"
+            [(ngModel)]="lastName"
+            id="name"
+            placeholder="Write the name"
+          />
+          <label for="name">Write the last Name</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- segunda fila -->
+
+    <div class="row mt-3">
+      <div class="col-lg-6">
+        <div class="form-floating">
+          <input
+            class="form-control"
+            type="number"
+            [(ngModel)]="number"
+            id="name"
+            placeholder="Write the name"
+          />
+          <label for="name">Write the number</label>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-floating">
+          <input
+            class="form-control "
+            type="text"
+            [(ngModel)]="addres"
+            id="name"
+            placeholder="Write the name"
+          />
+          <label for="name">address</label>
+        </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-lg-12 text-center">
+        <button class="btn btn-danger w-75" (click)="validar()" type="button">
+          Save information
+        </button>
+      </div>
+    </div>
+</div>
+
+
