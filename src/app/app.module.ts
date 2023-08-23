@@ -9,6 +9,8 @@ import { AgregarComponent } from './components/agregar/agregar.component';
 import { FormCrearComponent } from './components/agregar/form-crear/form-crear.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ListaComponent } from './components/lista/lista.component';
+import { UsuariosComponent } from './components/lista/usuarios/usuarios.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FormsModule } from '@angular/forms';
     UsarComponent,
     AgregarComponent,
     FormCrearComponent,
+    ListaComponent,
+    UsuariosComponent,
 
   ],
   imports: [

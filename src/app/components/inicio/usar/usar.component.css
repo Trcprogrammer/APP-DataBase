@@ -65,8 +65,7 @@
     display: none;
   }
   .informacionProgrammer{
-    display: flex;
-    justify-content: end;
+    display: none;
   }
   
 }
